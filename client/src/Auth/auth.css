@@ -1,0 +1,54 @@
+.auth{
+    margin: 0% 25%;
+    text-align: center;
+    background-color: #222222;
+    padding: 5%;
+}
+.signin-container{
+    padding: 0px 40px;
+    margin: 0;
+}
+.signin-container h2{
+    font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-family: sans-serif;
+}
+.signin-container h4{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+form input{
+width: 100%;
+margin-bottom: 10px;
+height: 40px;
+background-color: inherit;
+border: none;
+border: 1px solid rgb(116, 114, 114);
+outline: none;
+color: rgb(141, 139, 139);
+padding: 5px;
+font-size: 16px;
+}
+button{
+    padding: 10px;
+    background-color: #5a5959;
+    cursor: pointer;
+    margin-top: 5px;
+    color: white;
+    font-weight: 500;
+}
+.googleBtn{
+    width: 85%;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+h6{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
