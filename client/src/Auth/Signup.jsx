@@ -28,9 +28,8 @@ export const Signup = () => {
     }
   }
   return (
-    <div className='signin-container'>
-      <h2>Sign Up</h2>
-              <form>
+    <>
+    <h1>Sign Up</h1>
         <input placeholder='username' required
           value={username}
           onChange={(e) => setUserName(e.target.value)}
@@ -44,7 +43,6 @@ export const Signup = () => {
           onChange={(e) => setPassword(e.target.value)}
           type="password"/>
                   <button type="submit" onClick={clickHandler}>Sign Up</button>
-              </form>
-          </div>
+            </>
   )
 }

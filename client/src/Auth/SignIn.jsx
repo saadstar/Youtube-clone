@@ -25,9 +25,9 @@ export const SignIn = () => {
     }
   }
   return (
-     <div className='signin-container'>
-              <h2>Sign In</h2>
-              <form>
+      <>
+        <h1 className='title'>Sign In</h1>
+        <h2>to continue</h2>              
         <input placeholder='username' required value={username}
           onChange={(e) => setUserName(e.target.value)}
           type="text"
@@ -40,7 +40,6 @@ export const SignIn = () => {
           type='password'
         />
                   <button type="submit" onClick={clickHandler}>Sign in</button>
-              </form>
-          </div>
+        </>
   )
 }

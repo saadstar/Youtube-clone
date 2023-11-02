@@ -28,12 +28,14 @@ export const Auth = () => {
 }
 
   return (
-      <div className='auth'>
+    <div className='signin-container'>
+      <div className='signin-wrapper'>
          <SignIn/>
-      <h6>Or</h6>
+      <h1>Or</h1>
       <button onClick={signInWithGoogle} className='googleBtn'>Sign in With Google</button>
-          <h6>Or</h6>
+          <h1>Or</h1>
          <Signup/>
-    </div>
+      </div>
+      </div>
   )
 }
