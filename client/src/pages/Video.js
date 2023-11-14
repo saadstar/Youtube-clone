@@ -20,10 +20,12 @@ export const Video = () => {
     const getSingleVideo = async () => {
       try {
         dispatch({ type: "VIDEO_START" });
-        const videoRes = await axios.get(`/video/find/${path}`);
+        const videoRes = await axios.get(
+          `https://youtube-clone-api-1zzw.onrender.com/api/video/find/${path}`
+        );
         dispatch({ type: "VIDEO_SUCCESS", payload: videoRes.data });
         const channelRes = await axios.get(
-          `/users/find/${currentVideo?.userId}`
+          `https://youtube-clone-api-1zzw.onrender.com/api/users/find/${currentVideo?.userId}`
         );
         console.log(currentVideo);
         setChanel(channelRes.data);

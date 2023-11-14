@@ -6,7 +6,7 @@ export const Recommendation = ({ tags }) => {
     const [videos, setVideos] = useState([]);
     useEffect(() => {
         const fetchVideos = async () => {
-            const res = await axios.get(`/video/tags?tags=${tags}`);
+            const res = await axios.get(`https://youtube-clone-api-1zzw.onrender.com/api/video/tags?tags=${tags}`);
             setVideos(res.data)
         }
         fetchVideos();

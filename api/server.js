@@ -9,7 +9,7 @@ const videoRouter = require("./routes/videoRoute");
 const commentRouter = require("./routes/commentRoute");
 const cors = require("cors");
 
-const PORT = 3500 || process.env.PORT;
+const PORT =  process.env.PORT || 3500;
 connectDB();
 
 app.use(express.json());

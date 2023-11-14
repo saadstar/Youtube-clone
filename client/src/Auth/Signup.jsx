@@ -15,7 +15,7 @@ export const Signup = () => {
     e.preventDefault();
     dispatch({type:"LOGIN_START"})
     try {
-      const res = await axios.post("http://localhost:3500/api/auth/register", {
+      const res = await axios.post("https://youtube-clone-api-1zzw.onrender.com/api/auth/register", {
         username,email,password
       }) 
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });

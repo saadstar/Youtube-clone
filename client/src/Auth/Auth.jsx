@@ -14,7 +14,7 @@ export const Auth = () => {
   const signInWithGoogle = async() => {
     dispatch({ type: "LOGIN_START"});
     signInWithPopup(auth, provider).then((result) => {      
-      axios.post("http://localhost:3000/api/auth/google", {
+      axios.post("https://youtube-clone-api-1zzw.onrender.com/api/auth/google", {
         username:result.user.displayName,
         email:result.user.email,
         img:result.user.photoURL

@@ -7,7 +7,7 @@ export const Comment = ({ comment }) => {
   useEffect(() => {
     const fetchChanel = async () => {
       try {
-        const res = await axios.get(`http://localhost:3500/users/find/${comment.userId}`)        
+        const res = await axios.get(`https://youtube-clone-api-1zzw.onrender.com/api/users/find/${comment.userId}`)        
         setChanel(res.data);
       } catch (err) { }
     }  

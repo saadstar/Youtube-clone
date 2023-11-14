@@ -11,7 +11,7 @@ export const Comments = ({videoId}) => {
   useEffect(() => {
    const fetchComments= async () => {
       try {
-        const res = await axios.get(`http://localhost:3500/api/comment/${videoId}`)
+        const res = await axios.get(`https://youtube-clone-api-1zzw.onrender.com/api/comment/${videoId}`)
         setComments(res.data);
       } catch (err) { }
     }

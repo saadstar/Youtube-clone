@@ -8,7 +8,7 @@ export const Card = ({ type,video }) => {
 
   const getAllChannels = async () => {
     try {
-      const res = await axios.get(`http://localhost:3500/api/users/find/${video.userId}`);
+      const res = await axios.get(`https://youtube-clone-api-1zzw.onrender.com/api/users/find/${video.userId}`);
       setChanel(res.data);
     } catch (err) {
       console.log(err);

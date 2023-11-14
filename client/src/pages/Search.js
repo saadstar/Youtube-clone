@@ -11,9 +11,13 @@ export const Search = () => {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-            const res = await axios.get(`/video/search${query}`);
+            const res = await axios.get(
+              `https://youtube-clone-api-1zzw.onrender.com/api/video/search${query}`
+            );
                 setVideos(res.data);
-                const chanelRes = await axios.get(`/users/find/${videos[0].userId}`);
+                const chanelRes = await axios.get(
+                  `https://youtube-clone-api-1zzw.onrender.com/api/users/find/${videos[0].userId}`
+                );
                 setChanel(chanelRes.data);
             }catch(err){}
       };
